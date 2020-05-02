@@ -17,7 +17,7 @@ import svg.element.BaseElement;
  */
 public class SVGParser
 {
-	private String fileName = "";
+	private String fileName = "test-1.svg";
 	
 	private SVG svg = new SVG();
 
