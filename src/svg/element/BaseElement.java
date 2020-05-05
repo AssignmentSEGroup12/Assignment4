@@ -2,11 +2,14 @@ package svg.element;
 
 //-----------------------------------------------------------------------------
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Base SVG element type.
  * @author cambolbro
  */
-public abstract class BaseElement implements Element
+public abstract class BaseElement implements Element, Prototype
 {
 	private final String label;
 
@@ -19,7 +22,16 @@ public abstract class BaseElement implements Element
 	{
 		this.label = new String(label);
 	}
-	
+
+	// factory design pattern
+	public static List<Element> elementFactory() {
+		return new ArrayList<Element>();
+	}
+
+	public Element makeElement(String label) {
+		return null;
+	}
+
 	//-------------------------------------------------------------------------
 
 	@Override
