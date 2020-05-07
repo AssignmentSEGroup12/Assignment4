@@ -2,7 +2,6 @@ package svg.element.shape;
 
 import svg.SVGParser;
 import svg.element.Element;
-import svg.element.Prototype;
 
 import java.util.List;
 
